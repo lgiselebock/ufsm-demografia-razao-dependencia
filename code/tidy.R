@@ -85,7 +85,7 @@ razao_dependencia_calculada |>
 
 
 
-palette_alpha <- c("#b6c5d7", "#ffc5bd", "#b2cba9")
+palette_alpha <- c("#b6c5d7", "#b2cba9", "#ffc5bd")
 
 
 razao_dependencia_tab |>
@@ -125,7 +125,12 @@ razao_dependencia_tab |>
     y = value,
     group = populacao
   ) +
-  geom_bar(aes(fill = populacao), stat = "identity") +
+  geom_bar(
+    aes(
+      fill = populacao
+    ),
+    stat = "identity"
+  ) +
   geom_text(
     aes(
       label = round(value, 2)
@@ -153,7 +158,7 @@ razao_dependencia_tab |>
     panel.grid.minor = element_blank(),
     panel.grid.major.x = element_blank(),
     legend.position = "bottom",
-    legend.text = element_text(size = 8),
+    legend.text = element_text(size = 9),
     plot.caption = element_text(hjust = 0.5)
   )
 
