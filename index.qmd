@@ -1,0 +1,207 @@
+---
+title: "A evolução da Razão de Dependência Demográfica brasileira no período de 2000 a 2060"
+author: "Luísa Gisele Böck"
+date: "02/10/2023"
+date-format: "MMMM DD, YYYY"
+format: 
+  revealjs: 
+    incremental: false
+    transition: slide
+    footer: "Slides por [Luísa Gisele Böck](https://luisa.rbind.io/), feito com [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Código disponível no [GitHub](https://github.com/lgiselebock/ufsm-demografia-razao-dependencia)."
+    theme: ["custom.scss"]
+    slide-number: c/t
+    show-slide-number: all
+    bibliography: references.bib
+    csl: csl/abnt-eceme.csl
+title-slide-attributes:
+  data-background-image: logo-jai-ufsm.png
+  data-background-size: 95%
+  data-background-position: 50% 5%
+---
+
+## O que é Razão de Dependência? {.center}
+
+- Mede a participação relativa do contingente populacional potencialmente inativo que necessitaria ser sustentado pela parcela da população potencialmente produtiva [@datasus_datasus_2005].
+
+- Pressupõe que os jovens (pessoas com até 14 anos) e os idosos (pessoas acima de 65 anos) de uma população são dependentes economicamente dos demais [@ifi_relatorio_2019].
+
+- É a quantidade de crianças (população menor de 14 anos) e idosos (população acima de 65 anos) que existe no país para cada pessoa em idade ativa (entre 15 e 64 anos) [@pitta_evolucao_2020].
+
+- A Razão de Dependência pode ser decomposta em: _Razão de Dependência de Jovens (RDJ)_ e _Razão de Dependência de Idosos (RDI)_. A soma das duas componentes individuais fornece a _Razão de Dependência Total (RDT)_ [@ifi_relatorio_2019].
+
+- A importância da _Razão de Dependência_ está no acompanhamento do grau de dependência econômica de uma determinada população, na sinalização do processo de rejuvenescimento ou de envelhecimento populacional de um espaço geográfico e na formulação de políticas públicas em áreas de interesse, como saúde, educação e previdência social [@datasus_datasus_2005].
+
+
+## Objetivos e Metodologia {.center}
+
+- Analisar as Razões de Dependência Demográfica brasileira desde o ano de 2000;
+
+- Projetar o grau de dependência para as próximas décadas, até 2060.
+
+<br>
+
+- Análises estatísticas a partir da coleta de dados secundários provenientes:
+  
+  - [Censo Demográfico 2000](https://www.ibge.gov.br/estatisticas/sociais/administracao-publica-e-participacao-politica/9663-censo-demografico-2000.html?=&t=destaques);
+  
+  - [Censo Demográfico 2010](https://www.ibge.gov.br/estatisticas/sociais/rendimento-despesa-e-consumo/9662-censo-demografico-2010.html?=&t=destaques);
+  
+  - e [Projeções Populacionais](https://www.ibge.gov.br/estatisticas/sociais/populacao/9109-projecao-da-populacao.html?=&t=resultados) para os próximos anos. Todos realizados pelo [Instituto Brasileiro de Geografia e Estatística (IBGE)](https://www.ibge.gov.br/pt/inicio.html).
+  
+  
+## Como a Razão de Dependência é calculada? {.center}
+
+A **Razão de Dependência Total** é definida como a soma da população de crianças/adolescentes e idosos (grupos etários economicamente dependentes) dividida pela população adulta (predominante no mercado de trabalho), multiplicada por 100.
+
+$$
+RDT = \dfrac{\text{número de pessoas com até 15 anos + número de pessoas com 65 anos ou mais}}{\text{número de pessoas entre 15 e 64 anos}} \times 100
+$$
+
+A **Razão de Dependência de Jovens** é calculada pela razão entre o número de pessoas entre 0 e 14 anos e o número de indivíduos entre 15 e 64 anos na população, multiplicada por 100.
+
+$$
+RDJ = \dfrac{\text{número de pessoas com até 15 anos}}{\text{número de pessoas entre 15 e 64 anos}} \times 100
+$$
+
+A **Razão de Dependência de Idosos** é obtida através da razão entre o número de pessoas com mais de 65 anos e o número de pessoas entre 15 e 64 anos de idade, multiplicada por 100.
+
+$$
+RDI = \dfrac{\text{número de pessoas com 65 anos ou mais}}{\text{número de pessoas entre 15 e 64 anos}} \times 100
+$$
+
+Valores elevados apontam que a População em Idade Ativa (PIA) deve sustentar uma maior proporção de dependentes [@datasus_datasus_2005].
+
+
+## Transição Demográfica - Pirâmides Etárias (2000 - 2060) {.center}
+
+::: columns
+::: {.column width="50%"}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+knitr::include_graphics(
+  here::here("graficos_files", "figure-html", "figura-03-1.png")
+)
+```
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+knitr::include_graphics(
+  here::here("graficos_files", "figure-html", "figura-05-1.png")
+)
+```
+
+:::
+:::
+
+- Nenhum país do mundo ficou alheio à Transição Demográfica [@alves_transicao_2008].
+
+- A Transição Demográfica, geralmente, inicia com a queda das taxas de mortalidade e, depois de um certo tempo, prossegue com a queda das taxas de natalidade, provocando uma forte mudança na estrutura etária da pirâmide populacional [@alves_transicao_2008].
+
+- A base da pirâmide de 2060 será menor do que a base da pirâmide de 2000 e, ao mesmo tempo, o topo será maior, indicando a dimensão do processo de envelhecimento da estrutura etária brasileira.
+
+
+## Transição Demográfica {.center}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+knitr::include_graphics(
+  here::here("graficos_files", "figure-html", "figura-01-1.png"), 
+)
+```
+
+## {.center} 
+
+- No início há uma aceleração do crescimento vegetativo da população, depois uma desaceleração do crescimento e, por fim, pode haver estabilização ou descrescimento da população [@alves_transicao_2014].
+
+- É possível observar:
+
+  - que a participação dos jovens vem diminuindo constantemente na população;
+  
+  - um aumento da população idosa em proporções cada vez maiores;
+  
+  - uma ampliação inical da População em Idade Ativa e, posteriormente, uma redução dessas pessoas no mercado de trabalho.
+
+- Dessa forma, há um padrão de crescimento diferenciado por idade:
+
+  - baixo ou negativo, no segmento jovem;
+  
+  - médio ou baixo, na população em idade ativa, entre as décadas de 2030 e 2040, e negativo no restante do período;
+  
+  - muito alto no contingente de idosos.
+  
+- Esse padrão de crescimento caracterizará a transição da estrutura etária brasileira, provocando alterações nas relações de dependência entre os três principais grupos etários [@carvalho_transicao_2008; @alves_transicao_2008].
+
+---
+
+## E a Razão de Dependência? {.center}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+knitr::include_graphics(
+  here::here("graficos_files", "figure-html", "figura-02-1.png"), 
+)
+```
+
+## {.center}
+
+- Houve uma redução da Razão de Dependência do grupo de crianças/adolescentes e um aumento na razão de dependência de idosos. A razão de dependência total apresentou queda entre os anos de 2000 a 2020, com o aumento relativo da população em idade ativa em relação à população total, promovendo, assim, uma possibilidade de crescimento econômico impulsionado pelo Bônus Demográfico [@pereima_transicao_2013]; entretanto, segundo as projeções, a RD voltará a aumentar após 2030, devido a diminuição da PEA e indicando o fim do Bônus Demográfico.
+
+- As projeções do [IBGE](https://www.ibge.gov.br/) indicam que a Razão de Dependência dos Jovens (RDJ) irá diminuir, o que implica que a Razão de Dependência dos Idosos (RDI) irá aumentar numa taxa ainda maior [@pitta_evolucao_2020].
+
+- O principal componente da redução da carga de dependência foi a redução da Razão de Dependência do grupo das crianças/adolescentes que vem apresentando um declínio continuado em decorrência da queda da fecundidade. Essa redução foi tão significativa que contrabalançou o aumento da carga de dependência dos idosos. Somente após 2030 que a Razão de Dependência dos Idosos (RDI) superará a Razão de Dependência dos Jovens (RDJ) e fará a Razão de Dependência Total (RDT) aumentar [@alves_transicao_2008].
+
+- A Razão de Dependência Total (RDT) começará a crescer a partir da década de 2020, impulsionada pelo maior crescimento da Razão de Dependência dos Idosos (RDI) [@ifi_relatorio_2019]. Esta mudança não será homogênea entre as diferentes regiões do país [@pitta_evolucao_2020].
+
+## Bônus Demográfico {.center}
+
+- Também chamado de Janela de Oportunidade, corresponde à menor carga de dependência [@alves_transicao_2008].
+
+- Segundo Alves [-@alves_transicao_2008], é definido da seguinte forma:
+
+  - o Bônus começa quando a porcentagem da População em Idade Ativa (entre 15 a 64 anos) é igual ou maior que a porcentagem da Razão de Dependência;
+  
+  - o Bônus termina quando a porcentagem da População em Idade Ativa Ativa (entre 15 a 64 anos) é igual ou menor que a porcentagem da Razão de Dependência.
+
+- O crescimento econômico é impulsionado pelo Bônus Demográfico, quando a população em idade de trabalho (15 a 64 anos) cresce em proporção à população jovem (menores de 15 anos) e idosa (maiores de 65 anos) [@pereima_transicao_2013].
+
+- No Brasil, o Bônus Demográfico está próximo ao fim [@ifi_relatorio_2019].
+
+
+## Conclusão
+
+- A Razão de Dependência indica a parcela de uma população dependente suportada pela população potencialmente produtiva (em idade de trabalhar).
+
+- A Razão de Dependência Total é definida como a soma da população de crianças/adolescentes e idosos (grupos etários economicamente dependentes) dividida pela população adulta (predominante no mercado de trabalho), multiplicada por 100.
+
+- A base da pirâmide no futuro será menor do que a base que havia no passado, e o topo será maior, indicando a dimensão do processo de envelhecimento da estrutura etária brasileira.
+
+- Enquanto a participação dos jovens vem diminuindo na população, ocorre um aumento da população idosa em proporções cada vez maiores.
+
+- A alteração no padrão de crescimento populacional provocará mudanças nas relações de dependência dos três principais grupos etários.
+
+- Houve uma redução da Razão de Dependência dos Jovens e um aumento na Razão de Dependência dos Idosos. Esse aumento fará a Razão de Dependência Total crescer a partir da década de 2020.
+
+Esses fatos são de grande importância, uma vez que afetam diretamente o mercado de trabalho e impõem desafios na promoção dos níveis de produtividade do trabalho para a manutenção do crescimento econômico com meios sustentáveis [@ifi_relatorio_2019; @pereima_transicao_2013]. Ainda, é necessário definir e implantar políticas públicas de maneira que as oportunidades possam ser criadas e aproveitadas no enfrentamento dos desafios gerados pelo novo padrão demográfico [@carvalho_transicao_2008].
+
+
+## Referências
+
+
+

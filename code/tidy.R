@@ -13,7 +13,7 @@ razao_dependencia_tab <- readr::read_csv(
   here::here("data", "razao-dependencia.csv")
 )
 
-razao_dependencia
+razao_dependencia_tab
 
 razao_dependencia <- c("RDT", "RDI", "RDJ")
 x2000 <- c((9935100+50266122)/109597948, (9935100/109597948), (50266122/109597948))
