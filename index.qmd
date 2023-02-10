@@ -177,7 +177,7 @@ knitr::include_graphics(
 
   - o Bônus começa quando a porcentagem da População em Idade Ativa (entre 15 a 64 anos) é igual ou maior que a porcentagem da Razão de Dependência;
   
-  - o Bônus termina quando a porcentagem da População em Idade Ativa Ativa (entre 15 a 64 anos) é igual ou menor que a porcentagem da Razão de Dependência.
+  - o Bônus termina quando a porcentagem da População em Idade Ativa (entre 15 a 64 anos) é igual ou menor que a porcentagem da Razão de Dependência.
 
 - O crescimento econômico é impulsionado pelo Bônus Demográfico, quando a população em idade de trabalho (15 a 64 anos) cresce em proporção à população jovem (menores de 15 anos) e idosa (maiores de 65 anos) [@pereima_transicao_2013].
 
