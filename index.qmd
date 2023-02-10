@@ -161,7 +161,7 @@ knitr::include_graphics(
 
 ## {.center}
 
-- Houve uma redução da Razão de Dependência do grupo de crianças/adolescentes e um aumento na razão de dependência de idosos. A razão de dependência total apresentou queda entre os anos de 2000 a 2020, com o aumento relativo da população em idade ativa em relação à população total, promovendo, assim, uma possibilidade de crescimento econômico impulsionado pelo Bônus Demográfico [@pereima_transicao_2013]; entretanto, segundo as projeções, a RD voltará a aumentar após 2030, devido a diminuição da PEA e indicando o fim do Bônus Demográfico.
+- Houve uma redução da Razão de Dependência do grupo de crianças/adolescentes e um aumento na razão de dependência de idosos. A razão de dependência total apresentou queda entre os anos de 2000 a 2020, com o aumento relativo da população em idade ativa em relação à população total, promovendo, assim, uma possibilidade de crescimento econômico impulsionado pelo Bônus Demográfico [@pereima_transicao_2013]; entretanto, segundo as projeções, a Razão de Dependência voltará a aumentar após 2030, devido a diminuição da População em Idade Ativa e indicando o fim do Bônus Demográfico.
 
 - As projeções do [IBGE](https://www.ibge.gov.br/) indicam que a Razão de Dependência dos Jovens (RDJ) irá diminuir, o que implica que a Razão de Dependência dos Idosos (RDI) irá aumentar numa taxa ainda maior [@pitta_evolucao_2020].
 
